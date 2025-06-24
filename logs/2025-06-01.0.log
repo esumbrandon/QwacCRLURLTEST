@@ -1,0 +1,5 @@
+[INFO ][17:39:18.557][main] - Could not detect default configuration classes for test class [com.example.test.TestApplicationTests]: TestApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO ][17:39:18.608][main] - Found @SpringBootConfiguration com.example.test.TestApplication for test class com.example.test.TestApplicationTests
+[INFO ][17:39:18.781][main] - Starting TestApplicationTests using Java 17.0.15 with PID 2289 (started by admin in /Users/admin/Desktop/Projetcs/Adorsys projects/Test)
+[INFO ][17:39:18.782][main] - No active profile set, falling back to 1 default profile: "default"
+[INFO ][17:39:19.236][main] - Started TestApplicationTests in 0.572 seconds (process running for 1.055)

@@ -1,0 +1,805 @@
+[INFO ][06:15:21.661][main] - Starting TestApplication (using MyCustomDataLoader for CRL fetching)
+[INFO ][06:15:21.947][main] - Starting TestApplication using Java 17.0.15 with PID 1171 (/Users/admin/Desktop/Adorsys projects/Test/target/classes started by admin in /Users/admin/Desktop/Adorsys projects/Test)
+[INFO ][06:15:21.947][main] - No active profile set, falling back to 1 default profile: "default"
+[INFO ][06:15:22.367][main] - Tomcat initialized with port 8080 (http)
+[INFO ][06:15:22.374][main] - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ][06:15:22.375][main] - Starting service [Tomcat]
+[INFO ][06:15:22.375][main] - Starting Servlet engine: [Apache Tomcat/10.1.41]
+[INFO ][06:15:22.403][main] - Initializing Spring embedded WebApplicationContext
+[INFO ][06:15:22.404][main] - Root WebApplicationContext: initialization completed in 434 ms
+[INFO ][06:15:22.448][main] - No protocols configured, using default CommonsDataLoader behavior
+[INFO ][06:15:22.452][main] - QwacRunner: Testing CRL fetch using allowed protocols (HTTP, HTTPS) and disallowed (FTP)
+[INFO ][06:15:22.452][main] - QwacRunner: Calling http://example.com (allowed)
+[INFO ][06:15:23.891][main] - QwacRunner: Calling https://example.com (allowed)
+[INFO ][06:15:25.045][main] - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ][06:15:25.052][main] - Tomcat started on port 8080 (http) with context path '/'
+[INFO ][06:15:25.056][main] - Started TestApplication in 3.334 seconds (process running for 4.194)
+[INFO ][06:16:14.963][SpringApplicationShutdownHook] - Commencing graceful shutdown. Waiting for active requests to complete
+[INFO ][06:16:14.967][tomcat-shutdown] - Graceful shutdown complete
+[INFO ][06:16:16.328][main] - Starting TestApplication (using MyCustomDataLoader for CRL fetching)
+[INFO ][06:16:16.559][main] - Starting TestApplication using Java 17.0.15 with PID 1177 (/Users/admin/Desktop/Adorsys projects/Test/target/classes started by admin in /Users/admin/Desktop/Adorsys projects/Test)
+[INFO ][06:16:16.560][main] - No active profile set, falling back to 1 default profile: "default"
+[INFO ][06:16:16.963][main] - Tomcat initialized with port 8080 (http)
+[INFO ][06:16:16.968][main] - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ][06:16:16.969][main] - Starting service [Tomcat]
+[INFO ][06:16:16.969][main] - Starting Servlet engine: [Apache Tomcat/10.1.41]
+[INFO ][06:16:16.996][main] - Initializing Spring embedded WebApplicationContext
+[INFO ][06:16:16.996][main] - Root WebApplicationContext: initialization completed in 413 ms
+[INFO ][06:16:17.036][main] - Protocol filtering enabled with allowed protocols: [FILE, HTTP, HTTPS, FTP]
+[INFO ][06:16:17.039][main] - QwacRunner: Testing CRL fetch using allowed protocols (HTTP, HTTPS) and disallowed (FTP)
+[INFO ][06:16:17.039][main] - QwacRunner: Calling http://example.com (allowed)
+[INFO ][06:16:17.041][main] - Fetching CRL from allowed URL: https://example.com
+[INFO ][06:16:18.380][main] - QwacRunner: Calling https://example.com (allowed)
+[INFO ][06:16:18.380][main] - Fetching CRL from allowed URL: https://example.com
+[INFO ][06:16:19.512][main] - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ][06:16:19.519][main] - Tomcat started on port 8080 (http) with context path '/'
+[INFO ][06:16:19.523][main] - Started TestApplication in 3.157 seconds (process running for 3.802)
+[INFO ][06:16:52.658][SpringApplicationShutdownHook] - Commencing graceful shutdown. Waiting for active requests to complete
+[INFO ][06:16:52.663][tomcat-shutdown] - Graceful shutdown complete
+[INFO ][06:16:53.985][main] - Starting TestApplication (using MyCustomDataLoader for CRL fetching)
+[INFO ][06:16:54.210][main] - Starting TestApplication using Java 17.0.15 with PID 1186 (/Users/admin/Desktop/Adorsys projects/Test/target/classes started by admin in /Users/admin/Desktop/Adorsys projects/Test)
+[INFO ][06:16:54.211][main] - No active profile set, falling back to 1 default profile: "default"
+[INFO ][06:16:54.585][main] - Tomcat initialized with port 8080 (http)
+[INFO ][06:16:54.591][main] - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ][06:16:54.591][main] - Starting service [Tomcat]
+[INFO ][06:16:54.592][main] - Starting Servlet engine: [Apache Tomcat/10.1.41]
+[INFO ][06:16:54.618][main] - Initializing Spring embedded WebApplicationContext
+[INFO ][06:16:54.618][main] - Root WebApplicationContext: initialization completed in 385 ms
+[WARN ][06:16:54.653][main] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'qwacRunner' defined in file [/Users/admin/Desktop/Adorsys projects/Test/target/classes/com/example/test/QwacRunner.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'crlDataLoader' defined in class path resource [com/example/test/QwacTestConfig.class]: Failed to instantiate [eu.europa.esig.dss.service.http.commons.CommonsDataLoader]: Factory method 'crlDataLoader' threw exception with message: java.lang.NullPointerException: Cannot invoke "Object.toString()" because "value" is null
+[INFO ][06:16:54.654][main] - Stopping service [Tomcat]
+[INFO ][06:16:54.661][main] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[ERROR][06:16:54.671][main] - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'qwacRunner' defined in file [/Users/admin/Desktop/Adorsys projects/Test/target/classes/com/example/test/QwacRunner.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'crlDataLoader' defined in class path resource [com/example/test/QwacTestConfig.class]: Failed to instantiate [eu.europa.esig.dss.service.http.commons.CommonsDataLoader]: Factory method 'crlDataLoader' threw exception with message: java.lang.NullPointerException: Cannot invoke "Object.toString()" because "value" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351)
+	at com.example.test.TestApplication.main(TestApplication.java:18)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'crlDataLoader' defined in class path resource [com/example/test/QwacTestConfig.class]: Failed to instantiate [eu.europa.esig.dss.service.http.commons.CommonsDataLoader]: Factory method 'crlDataLoader' threw exception with message: java.lang.NullPointerException: Cannot invoke "Object.toString()" because "value" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:489)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1740)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 21 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [eu.europa.esig.dss.service.http.commons.CommonsDataLoader]: Factory method 'crlDataLoader' threw exception with message: java.lang.NullPointerException: Cannot invoke "Object.toString()" because "value" is null
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:199)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 35 common frames omitted
+Caused by: java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "Object.toString()" because "value" is null
+	at com.example.test.ConfigLoader.loadYamlAsProperties(ConfigLoader.java:18)
+	at com.example.test.QwacTestConfig.crlDataLoader(QwacTestConfig.java:21)
+	at com.example.test.QwacTestConfig$$SpringCGLIB$$0.CGLIB$crlDataLoader$0(<generated>)
+	at com.example.test.QwacTestConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:393)
+	at com.example.test.QwacTestConfig$$SpringCGLIB$$0.crlDataLoader(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171)
+	... 38 common frames omitted
+Caused by: java.lang.NullPointerException: Cannot invoke "Object.toString()" because "value" is null
+	at com.example.test.ConfigLoader.flattenYaml(ConfigLoader.java:30)
+	at com.example.test.ConfigLoader.flattenYaml(ConfigLoader.java:28)
+	at com.example.test.ConfigLoader.flattenYaml(ConfigLoader.java:28)
+	at com.example.test.ConfigLoader.flattenYaml(ConfigLoader.java:28)
+	at com.example.test.ConfigLoader.loadYamlAsProperties(ConfigLoader.java:15)
+	... 49 common frames omitted
+[INFO ][06:17:11.510][main] - Starting TestApplication (using MyCustomDataLoader for CRL fetching)
+[INFO ][06:17:11.734][main] - Starting TestApplication using Java 17.0.15 with PID 1188 (/Users/admin/Desktop/Adorsys projects/Test/target/classes started by admin in /Users/admin/Desktop/Adorsys projects/Test)
+[INFO ][06:17:11.734][main] - No active profile set, falling back to 1 default profile: "default"
+[INFO ][06:17:12.116][main] - Tomcat initialized with port 8080 (http)
+[INFO ][06:17:12.121][main] - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ][06:17:12.122][main] - Starting service [Tomcat]
+[INFO ][06:17:12.122][main] - Starting Servlet engine: [Apache Tomcat/10.1.41]
+[INFO ][06:17:12.147][main] - Initializing Spring embedded WebApplicationContext
+[INFO ][06:17:12.147][main] - Root WebApplicationContext: initialization completed in 390 ms
+[INFO ][06:17:12.186][main] - Protocol filtering enabled with allowed protocols: [ftp]
+[INFO ][06:17:12.189][main] - QwacRunner: Testing CRL fetch using allowed protocols (HTTP, HTTPS) and disallowed (FTP)
+[INFO ][06:17:12.189][main] - QwacRunner: Calling http://example.com (allowed)
+[WARN ][06:17:12.190][main] - Blocked CRL fetch due to unsupported protocol: HTTPS
+[ERROR][06:17:12.191][main] - Error fetching CRL from URL: https://example.com
+eu.europa.esig.dss.model.DSSException: Protocol not allowed: HTTPS
+	at com.example.test.MyCustomDataLoader.get(MyCustomDataLoader.java:46)
+	at com.example.test.QwacRunner.testCrlFetch(QwacRunner.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:429)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1818)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351)
+	at com.example.test.TestApplication.main(TestApplication.java:18)
+[ERROR][06:17:12.191][main] - QwacRunner: Error during CRL fetch (caught and logged, not re-thrown):
+eu.europa.esig.dss.model.DSSException: Error fetching CRL: https://example.com
+	at com.example.test.MyCustomDataLoader.get(MyCustomDataLoader.java:50)
+	at com.example.test.QwacRunner.testCrlFetch(QwacRunner.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:429)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1818)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351)
+	at com.example.test.TestApplication.main(TestApplication.java:18)
+Caused by: eu.europa.esig.dss.model.DSSException: Protocol not allowed: HTTPS
+	at com.example.test.MyCustomDataLoader.get(MyCustomDataLoader.java:46)
+	... 28 common frames omitted
+[INFO ][06:17:12.318][main] - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ][06:17:12.325][main] - Tomcat started on port 8080 (http) with context path '/'
+[INFO ][06:17:12.330][main] - Started TestApplication in 0.784 seconds (process running for 1.353)
+[INFO ][06:17:49.545][SpringApplicationShutdownHook] - Commencing graceful shutdown. Waiting for active requests to complete
+[INFO ][06:17:49.551][tomcat-shutdown] - Graceful shutdown complete
+[INFO ][06:17:50.772][main] - Starting TestApplication (using MyCustomDataLoader for CRL fetching)
+[INFO ][06:17:50.987][main] - Starting TestApplication using Java 17.0.15 with PID 1191 (/Users/admin/Desktop/Adorsys projects/Test/target/classes started by admin in /Users/admin/Desktop/Adorsys projects/Test)
+[INFO ][06:17:50.987][main] - No active profile set, falling back to 1 default profile: "default"
+[INFO ][06:17:51.359][main] - Tomcat initialized with port 8080 (http)
+[INFO ][06:17:51.364][main] - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ][06:17:51.365][main] - Starting service [Tomcat]
+[INFO ][06:17:51.365][main] - Starting Servlet engine: [Apache Tomcat/10.1.41]
+[INFO ][06:17:51.389][main] - Initializing Spring embedded WebApplicationContext
+[INFO ][06:17:51.389][main] - Root WebApplicationContext: initialization completed in 379 ms
+[INFO ][06:17:51.425][main] - Protocol filtering enabled with allowed protocols: [htpps]
+[INFO ][06:17:51.429][main] - QwacRunner: Testing CRL fetch using allowed protocols (HTTP, HTTPS) and disallowed (FTP)
+[INFO ][06:17:51.429][main] - QwacRunner: Calling http://example.com (allowed)
+[WARN ][06:17:51.431][main] - Blocked CRL fetch due to unsupported protocol: HTTPS
+[ERROR][06:17:51.431][main] - Error fetching CRL from URL: https://example.com
+eu.europa.esig.dss.model.DSSException: Protocol not allowed: HTTPS
+	at com.example.test.MyCustomDataLoader.get(MyCustomDataLoader.java:46)
+	at com.example.test.QwacRunner.testCrlFetch(QwacRunner.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:429)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1818)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351)
+	at com.example.test.TestApplication.main(TestApplication.java:18)
+[ERROR][06:17:51.432][main] - QwacRunner: Error during CRL fetch (caught and logged, not re-thrown):
+eu.europa.esig.dss.model.DSSException: Error fetching CRL: https://example.com
+	at com.example.test.MyCustomDataLoader.get(MyCustomDataLoader.java:50)
+	at com.example.test.QwacRunner.testCrlFetch(QwacRunner.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:429)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1818)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351)
+	at com.example.test.TestApplication.main(TestApplication.java:18)
+Caused by: eu.europa.esig.dss.model.DSSException: Protocol not allowed: HTTPS
+	at com.example.test.MyCustomDataLoader.get(MyCustomDataLoader.java:46)
+	... 28 common frames omitted
+[INFO ][06:17:51.566][main] - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ][06:17:51.574][main] - Tomcat started on port 8080 (http) with context path '/'
+[INFO ][06:17:51.579][main] - Started TestApplication in 0.771 seconds (process running for 1.33)
+[INFO ][06:22:51.678][SpringApplicationShutdownHook] - Commencing graceful shutdown. Waiting for active requests to complete
+[INFO ][06:22:51.683][tomcat-shutdown] - Graceful shutdown complete
+[INFO ][06:22:54.073][main] - Starting TestApplication (using MyCustomDataLoader for CRL fetching)
+[INFO ][06:22:54.298][main] - Starting TestApplication using Java 17.0.15 with PID 1630 (/Users/admin/Desktop/Adorsys projects/Test/target/classes started by admin in /Users/admin/Desktop/Adorsys projects/Test)
+[INFO ][06:22:54.298][main] - No active profile set, falling back to 1 default profile: "default"
+[INFO ][06:22:54.668][main] - Tomcat initialized with port 8080 (http)
+[INFO ][06:22:54.673][main] - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ][06:22:54.674][main] - Starting service [Tomcat]
+[INFO ][06:22:54.674][main] - Starting Servlet engine: [Apache Tomcat/10.1.41]
+[INFO ][06:22:54.700][main] - Initializing Spring embedded WebApplicationContext
+[INFO ][06:22:54.700][main] - Root WebApplicationContext: initialization completed in 379 ms
+[INFO ][06:22:54.737][main] - Using ProtocolFilteringDataLoader with allowed protocols: [htpps]
+[INFO ][06:22:54.738][main] - CRL protocol filter enabled. Allowed protocols: [htpps]
+[INFO ][06:22:54.741][main] - QwacRunner: Testing CRL fetch using allowed protocols (HTTP, HTTPS) and disallowed (FTP)
+[INFO ][06:22:54.741][main] - QwacRunner: Calling http://example.com (allowed)
+[WARN ][06:22:54.742][main] - Blocked CRL fetch due to unsupported protocol: HTTPS
+[ERROR][06:22:54.742][main] - Error fetching CRL from URL: https://example.com
+eu.europa.esig.dss.model.DSSException: Protocol not allowed: HTTPS
+	at com.example.test.MyCustomDataLoader.get(MyCustomDataLoader.java:42)
+	at com.example.test.QwacRunner.testCrlFetch(QwacRunner.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:429)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1818)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351)
+	at com.example.test.TestApplication.main(TestApplication.java:18)
+[ERROR][06:22:54.743][main] - QwacRunner: Error during CRL fetch (caught and logged, not re-thrown):
+eu.europa.esig.dss.model.DSSException: Error fetching CRL: https://example.com
+	at com.example.test.MyCustomDataLoader.get(MyCustomDataLoader.java:46)
+	at com.example.test.QwacRunner.testCrlFetch(QwacRunner.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:429)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1818)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351)
+	at com.example.test.TestApplication.main(TestApplication.java:18)
+Caused by: eu.europa.esig.dss.model.DSSException: Protocol not allowed: HTTPS
+	at com.example.test.MyCustomDataLoader.get(MyCustomDataLoader.java:42)
+	... 28 common frames omitted
+[INFO ][06:22:54.871][main] - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ][06:22:54.879][main] - Tomcat started on port 8080 (http) with context path '/'
+[INFO ][06:22:54.883][main] - Started TestApplication in 0.775 seconds (process running for 1.335)
+[INFO ][06:23:07.486][SpringApplicationShutdownHook] - Commencing graceful shutdown. Waiting for active requests to complete
+[INFO ][06:23:07.491][tomcat-shutdown] - Graceful shutdown complete
+[INFO ][06:23:08.719][main] - Starting TestApplication (using MyCustomDataLoader for CRL fetching)
+[INFO ][06:23:08.946][main] - Starting TestApplication using Java 17.0.15 with PID 1652 (/Users/admin/Desktop/Adorsys projects/Test/target/classes started by admin in /Users/admin/Desktop/Adorsys projects/Test)
+[INFO ][06:23:08.947][main] - No active profile set, falling back to 1 default profile: "default"
+[INFO ][06:23:09.317][main] - Tomcat initialized with port 8080 (http)
+[INFO ][06:23:09.322][main] - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ][06:23:09.322][main] - Starting service [Tomcat]
+[INFO ][06:23:09.322][main] - Starting Servlet engine: [Apache Tomcat/10.1.41]
+[INFO ][06:23:09.348][main] - Initializing Spring embedded WebApplicationContext
+[INFO ][06:23:09.348][main] - Root WebApplicationContext: initialization completed in 378 ms
+[WARN ][06:23:09.384][main] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'qwacRunner' defined in file [/Users/admin/Desktop/Adorsys projects/Test/target/classes/com/example/test/QwacRunner.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'crlDataLoader' defined in class path resource [com/example/test/QwacTestConfig.class]: Failed to instantiate [eu.europa.esig.dss.service.http.commons.CommonsDataLoader]: Factory method 'crlDataLoader' threw exception with message: java.lang.NullPointerException: Cannot invoke "Object.toString()" because "value" is null
+[INFO ][06:23:09.386][main] - Stopping service [Tomcat]
+[INFO ][06:23:09.393][main] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[ERROR][06:23:09.400][main] - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'qwacRunner' defined in file [/Users/admin/Desktop/Adorsys projects/Test/target/classes/com/example/test/QwacRunner.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'crlDataLoader' defined in class path resource [com/example/test/QwacTestConfig.class]: Failed to instantiate [eu.europa.esig.dss.service.http.commons.CommonsDataLoader]: Factory method 'crlDataLoader' threw exception with message: java.lang.NullPointerException: Cannot invoke "Object.toString()" because "value" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351)
+	at com.example.test.TestApplication.main(TestApplication.java:18)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'crlDataLoader' defined in class path resource [com/example/test/QwacTestConfig.class]: Failed to instantiate [eu.europa.esig.dss.service.http.commons.CommonsDataLoader]: Factory method 'crlDataLoader' threw exception with message: java.lang.NullPointerException: Cannot invoke "Object.toString()" because "value" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:489)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1740)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 21 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [eu.europa.esig.dss.service.http.commons.CommonsDataLoader]: Factory method 'crlDataLoader' threw exception with message: java.lang.NullPointerException: Cannot invoke "Object.toString()" because "value" is null
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:199)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 35 common frames omitted
+Caused by: java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "Object.toString()" because "value" is null
+	at com.example.test.ConfigLoader.loadYamlAsProperties(ConfigLoader.java:18)
+	at com.example.test.QwacTestConfig.crlDataLoader(QwacTestConfig.java:21)
+	at com.example.test.QwacTestConfig$$SpringCGLIB$$0.CGLIB$crlDataLoader$0(<generated>)
+	at com.example.test.QwacTestConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:393)
+	at com.example.test.QwacTestConfig$$SpringCGLIB$$0.crlDataLoader(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171)
+	... 38 common frames omitted
+Caused by: java.lang.NullPointerException: Cannot invoke "Object.toString()" because "value" is null
+	at com.example.test.ConfigLoader.flattenYaml(ConfigLoader.java:30)
+	at com.example.test.ConfigLoader.flattenYaml(ConfigLoader.java:28)
+	at com.example.test.ConfigLoader.flattenYaml(ConfigLoader.java:28)
+	at com.example.test.ConfigLoader.flattenYaml(ConfigLoader.java:28)
+	at com.example.test.ConfigLoader.loadYamlAsProperties(ConfigLoader.java:15)
+	... 49 common frames omitted
+[INFO ][07:49:15.334][main] - Starting TestApplication (using MyCustomDataLoader for CRL fetching)
+[INFO ][07:49:15.537][main] - Starting TestApplication using Java 17.0.15 with PID 1935 (/Users/admin/Desktop/Adorsys projects/Test/target/classes started by admin in /Users/admin/Desktop/Adorsys projects/Test)
+[INFO ][07:49:15.537][main] - No active profile set, falling back to 1 default profile: "default"
+[INFO ][07:49:15.855][main] - Tomcat initialized with port 8080 (http)
+[INFO ][07:49:15.859][main] - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ][07:49:15.859][main] - Starting service [Tomcat]
+[INFO ][07:49:15.860][main] - Starting Servlet engine: [Apache Tomcat/10.1.41]
+[INFO ][07:49:15.882][main] - Initializing Spring embedded WebApplicationContext
+[INFO ][07:49:15.882][main] - Root WebApplicationContext: initialization completed in 328 ms
+[WARN ][07:49:15.911][main] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'qwacRunner' defined in file [/Users/admin/Desktop/Adorsys projects/Test/target/classes/com/example/test/QwacRunner.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'crlDataLoader' defined in class path resource [com/example/test/QwacTestConfig.class]: Failed to instantiate [eu.europa.esig.dss.service.http.commons.CommonsDataLoader]: Factory method 'crlDataLoader' threw exception with message: java.lang.NullPointerException: Cannot invoke "Object.toString()" because "value" is null
+[INFO ][07:49:15.912][main] - Stopping service [Tomcat]
+[INFO ][07:49:15.922][main] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[ERROR][07:49:15.928][main] - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'qwacRunner' defined in file [/Users/admin/Desktop/Adorsys projects/Test/target/classes/com/example/test/QwacRunner.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'crlDataLoader' defined in class path resource [com/example/test/QwacTestConfig.class]: Failed to instantiate [eu.europa.esig.dss.service.http.commons.CommonsDataLoader]: Factory method 'crlDataLoader' threw exception with message: java.lang.NullPointerException: Cannot invoke "Object.toString()" because "value" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351)
+	at com.example.test.TestApplication.main(TestApplication.java:18)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'crlDataLoader' defined in class path resource [com/example/test/QwacTestConfig.class]: Failed to instantiate [eu.europa.esig.dss.service.http.commons.CommonsDataLoader]: Factory method 'crlDataLoader' threw exception with message: java.lang.NullPointerException: Cannot invoke "Object.toString()" because "value" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:489)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1740)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 21 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [eu.europa.esig.dss.service.http.commons.CommonsDataLoader]: Factory method 'crlDataLoader' threw exception with message: java.lang.NullPointerException: Cannot invoke "Object.toString()" because "value" is null
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:199)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 35 common frames omitted
+Caused by: java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "Object.toString()" because "value" is null
+	at com.example.test.ConfigLoader.loadYamlAsProperties(ConfigLoader.java:18)
+	at com.example.test.QwacTestConfig.crlDataLoader(QwacTestConfig.java:21)
+	at com.example.test.QwacTestConfig$$SpringCGLIB$$0.CGLIB$crlDataLoader$0(<generated>)
+	at com.example.test.QwacTestConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:393)
+	at com.example.test.QwacTestConfig$$SpringCGLIB$$0.crlDataLoader(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171)
+	... 38 common frames omitted
+Caused by: java.lang.NullPointerException: Cannot invoke "Object.toString()" because "value" is null
+	at com.example.test.ConfigLoader.flattenYaml(ConfigLoader.java:30)
+	at com.example.test.ConfigLoader.flattenYaml(ConfigLoader.java:28)
+	at com.example.test.ConfigLoader.flattenYaml(ConfigLoader.java:28)
+	at com.example.test.ConfigLoader.flattenYaml(ConfigLoader.java:28)
+	at com.example.test.ConfigLoader.loadYamlAsProperties(ConfigLoader.java:15)
+	... 49 common frames omitted
+[INFO ][07:51:37.190][main] - Starting TestApplication (using MyCustomDataLoader for CRL fetching)
+[INFO ][07:51:37.424][main] - Starting TestApplication using Java 17.0.15 with PID 2003 (/Users/admin/Desktop/Adorsys projects/Test/target/classes started by admin in /Users/admin/Desktop/Adorsys projects/Test)
+[INFO ][07:51:37.425][main] - No active profile set, falling back to 1 default profile: "default"
+[INFO ][07:51:37.805][main] - Tomcat initialized with port 8080 (http)
+[INFO ][07:51:37.810][main] - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ][07:51:37.811][main] - Starting service [Tomcat]
+[INFO ][07:51:37.811][main] - Starting Servlet engine: [Apache Tomcat/10.1.41]
+[INFO ][07:51:37.839][main] - Initializing Spring embedded WebApplicationContext
+[INFO ][07:51:37.840][main] - Root WebApplicationContext: initialization completed in 391 ms
+[WARN ][07:51:37.876][main] - Could not load dss.yaml, using default protocols: [FILE, HTTP, HTTPS, FTP]
+[INFO ][07:51:37.880][main] - Using ProtocolFilteringDataLoader with allowed protocols: [FILE, HTTP, HTTPS, FTP]
+[INFO ][07:51:37.880][main] - CRL protocol filter enabled. Allowed protocols: [FILE, HTTP, HTTPS, FTP]
+[INFO ][07:51:37.883][main] - QwacRunner: Testing CRL fetch using allowed protocols (HTTP, HTTPS) and disallowed (FTP)
+[INFO ][07:51:37.884][main] - QwacRunner: Calling http://example.com (allowed)
+[INFO ][07:51:39.263][main] - QwacRunner: Calling https://example.com (allowed)
+[INFO ][07:51:40.328][main] - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ][07:51:40.335][main] - Tomcat started on port 8080 (http) with context path '/'
+[INFO ][07:51:40.339][main] - Started TestApplication in 3.111 seconds (process running for 3.683)
+[INFO ][07:52:50.568][SpringApplicationShutdownHook] - Commencing graceful shutdown. Waiting for active requests to complete
+[INFO ][07:52:50.572][tomcat-shutdown] - Graceful shutdown complete
+[INFO ][07:52:52.882][main] - Starting TestApplication (using MyCustomDataLoader for CRL fetching)
+[INFO ][07:52:53.112][main] - Starting TestApplication using Java 17.0.15 with PID 2038 (/Users/admin/Desktop/Adorsys projects/Test/target/classes started by admin in /Users/admin/Desktop/Adorsys projects/Test)
+[INFO ][07:52:53.113][main] - No active profile set, falling back to 1 default profile: "default"
+[INFO ][07:52:53.491][main] - Tomcat initialized with port 8080 (http)
+[INFO ][07:52:53.496][main] - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ][07:52:53.497][main] - Starting service [Tomcat]
+[INFO ][07:52:53.497][main] - Starting Servlet engine: [Apache Tomcat/10.1.41]
+[INFO ][07:52:53.523][main] - Initializing Spring embedded WebApplicationContext
+[INFO ][07:52:53.523][main] - Root WebApplicationContext: initialization completed in 388 ms
+[INFO ][07:52:53.557][main] - dss.yaml (qwac.dss.dataloader.protocols) value: http
+[INFO ][07:52:53.557][main] - Using configured protocols from dss.yaml: [http]
+[INFO ][07:52:53.562][main] - Using ProtocolFilteringDataLoader with allowed protocols: [http]
+[INFO ][07:52:53.562][main] - CRL protocol filter enabled. Allowed protocols: [http]
+[INFO ][07:52:53.565][main] - QwacRunner: Testing CRL fetch using allowed protocols (HTTP, HTTPS) and disallowed (FTP)
+[INFO ][07:52:53.565][main] - QwacRunner: Calling http://example.com (allowed)
+[WARN ][07:52:53.567][main] - Blocked CRL fetch due to unsupported protocol: HTTPS
+[ERROR][07:52:53.567][main] - Error fetching CRL from URL: https://example.com
+eu.europa.esig.dss.model.DSSException: Protocol not allowed: HTTPS
+	at com.example.test.MyCustomDataLoader.get(MyCustomDataLoader.java:42)
+	at com.example.test.QwacRunner.testCrlFetch(QwacRunner.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:429)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1818)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351)
+	at com.example.test.TestApplication.main(TestApplication.java:18)
+[ERROR][07:52:53.568][main] - QwacRunner: Error during CRL fetch (caught and logged, not re-thrown):
+eu.europa.esig.dss.model.DSSException: Error fetching CRL: https://example.com
+	at com.example.test.MyCustomDataLoader.get(MyCustomDataLoader.java:46)
+	at com.example.test.QwacRunner.testCrlFetch(QwacRunner.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:429)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1818)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351)
+	at com.example.test.TestApplication.main(TestApplication.java:18)
+Caused by: eu.europa.esig.dss.model.DSSException: Protocol not allowed: HTTPS
+	at com.example.test.MyCustomDataLoader.get(MyCustomDataLoader.java:42)
+	... 28 common frames omitted
+[INFO ][07:52:53.697][main] - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ][07:52:53.710][main] - Tomcat started on port 8080 (http) with context path '/'
+[INFO ][07:52:53.716][main] - Started TestApplication in 0.795 seconds (process running for 1.357)
+[INFO ][07:53:32.394][SpringApplicationShutdownHook] - Commencing graceful shutdown. Waiting for active requests to complete
+[INFO ][07:53:32.399][tomcat-shutdown] - Graceful shutdown complete
+[INFO ][07:53:33.673][main] - Starting TestApplication (using MyCustomDataLoader for CRL fetching)
+[INFO ][07:53:33.896][main] - Starting TestApplication using Java 17.0.15 with PID 2055 (/Users/admin/Desktop/Adorsys projects/Test/target/classes started by admin in /Users/admin/Desktop/Adorsys projects/Test)
+[INFO ][07:53:33.897][main] - No active profile set, falling back to 1 default profile: "default"
+[INFO ][07:53:34.274][main] - Tomcat initialized with port 8080 (http)
+[INFO ][07:53:34.280][main] - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ][07:53:34.280][main] - Starting service [Tomcat]
+[INFO ][07:53:34.280][main] - Starting Servlet engine: [Apache Tomcat/10.1.41]
+[INFO ][07:53:34.308][main] - Initializing Spring embedded WebApplicationContext
+[INFO ][07:53:34.309][main] - Root WebApplicationContext: initialization completed in 388 ms
+[INFO ][07:53:34.342][main] - dss.yaml (qwac.dss.dataloader.protocols) value: http, https
+[INFO ][07:53:34.343][main] - Using configured protocols from dss.yaml: [http, https]
+[INFO ][07:53:34.347][main] - Using ProtocolFilteringDataLoader with allowed protocols: [http, https]
+[INFO ][07:53:34.347][main] - CRL protocol filter enabled. Allowed protocols: [http, https]
+[INFO ][07:53:34.351][main] - QwacRunner: Testing CRL fetch using allowed protocols (HTTP, HTTPS) and disallowed (FTP)
+[INFO ][07:53:34.351][main] - QwacRunner: Calling http://example.com (allowed)
+[INFO ][07:53:35.454][main] - QwacRunner: Calling https://example.com (allowed)
+[INFO ][07:53:36.491][main] - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ][07:53:36.498][main] - Tomcat started on port 8080 (http) with context path '/'
+[INFO ][07:53:36.502][main] - Started TestApplication in 2.793 seconds (process running for 3.391)
+[INFO ][07:53:52.088][SpringApplicationShutdownHook] - Commencing graceful shutdown. Waiting for active requests to complete
+[INFO ][07:53:52.092][tomcat-shutdown] - Graceful shutdown complete
+[INFO ][07:53:53.406][main] - Starting TestApplication (using MyCustomDataLoader for CRL fetching)
+[INFO ][07:53:53.628][main] - Starting TestApplication using Java 17.0.15 with PID 2064 (/Users/admin/Desktop/Adorsys projects/Test/target/classes started by admin in /Users/admin/Desktop/Adorsys projects/Test)
+[INFO ][07:53:53.629][main] - No active profile set, falling back to 1 default profile: "default"
+[INFO ][07:53:53.998][main] - Tomcat initialized with port 8080 (http)
+[INFO ][07:53:54.003][main] - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ][07:53:54.004][main] - Starting service [Tomcat]
+[INFO ][07:53:54.004][main] - Starting Servlet engine: [Apache Tomcat/10.1.41]
+[INFO ][07:53:54.031][main] - Initializing Spring embedded WebApplicationContext
+[INFO ][07:53:54.031][main] - Root WebApplicationContext: initialization completed in 380 ms
+[INFO ][07:53:54.065][main] - dss.yaml (qwac.dss.dataloader.protocols) value: https
+[INFO ][07:53:54.066][main] - Using configured protocols from dss.yaml: [https]
+[INFO ][07:53:54.070][main] - Using ProtocolFilteringDataLoader with allowed protocols: [https]
+[INFO ][07:53:54.070][main] - CRL protocol filter enabled. Allowed protocols: [https]
+[INFO ][07:53:54.073][main] - QwacRunner: Testing CRL fetch using allowed protocols (HTTP, HTTPS) and disallowed (FTP)
+[INFO ][07:53:54.073][main] - QwacRunner: Calling http://example.com (allowed)
+[INFO ][07:53:55.230][main] - QwacRunner: Calling https://example.com (allowed)
+[INFO ][07:53:56.257][main] - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ][07:53:56.263][main] - Tomcat started on port 8080 (http) with context path '/'
+[INFO ][07:53:56.268][main] - Started TestApplication in 2.827 seconds (process running for 3.382)
+[INFO ][07:54:00.687][SpringApplicationShutdownHook] - Commencing graceful shutdown. Waiting for active requests to complete
+[INFO ][07:54:00.691][tomcat-shutdown] - Graceful shutdown complete
+[INFO ][07:54:01.894][main] - Starting TestApplication (using MyCustomDataLoader for CRL fetching)
+[INFO ][07:54:02.119][main] - Starting TestApplication using Java 17.0.15 with PID 2069 (/Users/admin/Desktop/Adorsys projects/Test/target/classes started by admin in /Users/admin/Desktop/Adorsys projects/Test)
+[INFO ][07:54:02.120][main] - No active profile set, falling back to 1 default profile: "default"
+[INFO ][07:54:02.497][main] - Tomcat initialized with port 8080 (http)
+[INFO ][07:54:02.503][main] - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ][07:54:02.503][main] - Starting service [Tomcat]
+[INFO ][07:54:02.503][main] - Starting Servlet engine: [Apache Tomcat/10.1.41]
+[INFO ][07:54:02.530][main] - Initializing Spring embedded WebApplicationContext
+[INFO ][07:54:02.530][main] - Root WebApplicationContext: initialization completed in 381 ms
+[INFO ][07:54:02.567][main] - dss.yaml (qwac.dss.dataloader.protocols) value: https
+[INFO ][07:54:02.567][main] - Using configured protocols from dss.yaml: [https]
+[INFO ][07:54:02.571][main] - Using ProtocolFilteringDataLoader with allowed protocols: [https]
+[INFO ][07:54:02.572][main] - CRL protocol filter enabled. Allowed protocols: [https]
+[INFO ][07:54:02.575][main] - QwacRunner: Testing CRL fetch using allowed protocols (HTTP, HTTPS) and disallowed (FTP)
+[INFO ][07:54:02.575][main] - QwacRunner: Calling http://example.com (allowed)
+[INFO ][07:54:03.848][main] - QwacRunner: Calling https://example.com (allowed)
+[INFO ][07:54:04.922][main] - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ][07:54:04.928][main] - Tomcat started on port 8080 (http) with context path '/'
+[INFO ][07:54:04.933][main] - Started TestApplication in 3.002 seconds (process running for 3.56)
+[INFO ][07:54:17.925][SpringApplicationShutdownHook] - Commencing graceful shutdown. Waiting for active requests to complete
+[INFO ][07:54:17.929][tomcat-shutdown] - Graceful shutdown complete
+[INFO ][07:54:19.140][main] - Starting TestApplication (using MyCustomDataLoader for CRL fetching)
+[INFO ][07:54:19.367][main] - Starting TestApplication using Java 17.0.15 with PID 2077 (/Users/admin/Desktop/Adorsys projects/Test/target/classes started by admin in /Users/admin/Desktop/Adorsys projects/Test)
+[INFO ][07:54:19.368][main] - No active profile set, falling back to 1 default profile: "default"
+[INFO ][07:54:19.741][main] - Tomcat initialized with port 8080 (http)
+[INFO ][07:54:19.746][main] - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ][07:54:19.747][main] - Starting service [Tomcat]
+[INFO ][07:54:19.747][main] - Starting Servlet engine: [Apache Tomcat/10.1.41]
+[INFO ][07:54:19.774][main] - Initializing Spring embedded WebApplicationContext
+[INFO ][07:54:19.774][main] - Root WebApplicationContext: initialization completed in 384 ms
+[WARN ][07:54:19.808][main] - Could not load dss.yaml, using default protocols: [FILE, HTTP, HTTPS, FTP, LDAP]
+[INFO ][07:54:19.813][main] - Using ProtocolFilteringDataLoader with allowed protocols: [FILE, HTTP, HTTPS, FTP, LDAP]
+[INFO ][07:54:19.813][main] - CRL protocol filter enabled. Allowed protocols: [FILE, HTTP, HTTPS, FTP, LDAP]
+[INFO ][07:54:19.816][main] - QwacRunner: Testing CRL fetch using allowed protocols (HTTP, HTTPS) and disallowed (FTP)
+[INFO ][07:54:19.816][main] - QwacRunner: Calling http://example.com (allowed)
+[INFO ][07:54:21.143][main] - QwacRunner: Calling https://example.com (allowed)
+[INFO ][07:54:22.480][main] - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ][07:54:22.487][main] - Tomcat started on port 8080 (http) with context path '/'
+[INFO ][07:54:22.491][main] - Started TestApplication in 3.314 seconds (process running for 3.875)
+[INFO ][07:56:16.855][SpringApplicationShutdownHook] - Commencing graceful shutdown. Waiting for active requests to complete
+[INFO ][07:56:16.859][tomcat-shutdown] - Graceful shutdown complete
+[INFO ][07:56:18.120][main] - Starting TestApplication (using MyCustomDataLoader for CRL fetching)
+[INFO ][07:56:18.340][main] - Starting TestApplication using Java 17.0.15 with PID 2118 (/Users/admin/Desktop/Adorsys projects/Test/target/classes started by admin in /Users/admin/Desktop/Adorsys projects/Test)
+[INFO ][07:56:18.341][main] - No active profile set, falling back to 1 default profile: "default"
+[INFO ][07:56:18.717][main] - Tomcat initialized with port 8080 (http)
+[INFO ][07:56:18.723][main] - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ][07:56:18.723][main] - Starting service [Tomcat]
+[INFO ][07:56:18.723][main] - Starting Servlet engine: [Apache Tomcat/10.1.41]
+[INFO ][07:56:18.750][main] - Initializing Spring embedded WebApplicationContext
+[INFO ][07:56:18.750][main] - Root WebApplicationContext: initialization completed in 387 ms
+[INFO ][07:56:18.785][main] - dss.yaml (qwac.dss.dataloader.protocols) value: https, http
+[INFO ][07:56:18.785][main] - Using configured protocols from dss.yaml: [https, http]
+[INFO ][07:56:18.790][main] - Using ProtocolFilteringDataLoader with allowed protocols: [https, http]
+[INFO ][07:56:18.790][main] - CRL protocol filter enabled. Allowed protocols: [https, http]
+[INFO ][07:56:18.793][main] - QwacRunner: Testing CRL fetch using allowed protocols (HTTP, HTTPS) and disallowed (FTP)
+[INFO ][07:56:18.793][main] - QwacRunner: Calling http://example.com (allowed)
+[INFO ][07:56:20.435][main] - QwacRunner: Calling https://example.com (allowed)
+[INFO ][07:56:21.778][main] - Tomcat started on port 8080 (http) with context path '/'
+[INFO ][07:56:21.782][main] - Started TestApplication in 3.628 seconds (process running for 4.232)
+[INFO ][07:56:21.783][SpringApplicationShutdownHook] - Commencing graceful shutdown. Waiting for active requests to complete
+[INFO ][07:56:21.786][tomcat-shutdown] - Graceful shutdown complete
+[INFO ][07:56:23.100][main] - Starting TestApplication (using MyCustomDataLoader for CRL fetching)
+[INFO ][07:56:23.319][main] - Starting TestApplication using Java 17.0.15 with PID 2122 (/Users/admin/Desktop/Adorsys projects/Test/target/classes started by admin in /Users/admin/Desktop/Adorsys projects/Test)
+[INFO ][07:56:23.320][main] - No active profile set, falling back to 1 default profile: "default"
+[INFO ][07:56:23.691][main] - Tomcat initialized with port 8080 (http)
+[INFO ][07:56:23.696][main] - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ][07:56:23.697][main] - Starting service [Tomcat]
+[INFO ][07:56:23.697][main] - Starting Servlet engine: [Apache Tomcat/10.1.41]
+[INFO ][07:56:23.722][main] - Initializing Spring embedded WebApplicationContext
+[INFO ][07:56:23.723][main] - Root WebApplicationContext: initialization completed in 382 ms
+[INFO ][07:56:23.757][main] - dss.yaml (qwac.dss.dataloader.protocols) value: https, http
+[INFO ][07:56:23.758][main] - Using configured protocols from dss.yaml: [https, http]
+[INFO ][07:56:23.762][main] - Using ProtocolFilteringDataLoader with allowed protocols: [https, http]
+[INFO ][07:56:23.762][main] - CRL protocol filter enabled. Allowed protocols: [https, http]
+[INFO ][07:56:23.765][main] - QwacRunner: Testing CRL fetch using allowed protocols (HTTP, HTTPS) and disallowed (FTP)
+[INFO ][07:56:23.765][main] - QwacRunner: Calling http://example.com (allowed)
+[INFO ][07:56:25.300][main] - QwacRunner: Calling https://example.com (allowed)
+[INFO ][07:56:26.273][main] - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ][07:56:26.280][main] - Tomcat started on port 8080 (http) with context path '/'
+[INFO ][07:56:26.284][main] - Started TestApplication in 3.149 seconds (process running for 3.71)
+[INFO ][07:56:50.282][SpringApplicationShutdownHook] - Commencing graceful shutdown. Waiting for active requests to complete
+[INFO ][07:56:50.285][tomcat-shutdown] - Graceful shutdown complete
+[INFO ][07:56:51.607][main] - Starting TestApplication (using MyCustomDataLoader for CRL fetching)
+[INFO ][07:56:51.823][main] - Starting TestApplication using Java 17.0.15 with PID 2143 (/Users/admin/Desktop/Adorsys projects/Test/target/classes started by admin in /Users/admin/Desktop/Adorsys projects/Test)
+[INFO ][07:56:51.823][main] - No active profile set, falling back to 1 default profile: "default"
+[INFO ][07:56:52.204][main] - Tomcat initialized with port 8080 (http)
+[INFO ][07:56:52.209][main] - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ][07:56:52.210][main] - Starting service [Tomcat]
+[INFO ][07:56:52.210][main] - Starting Servlet engine: [Apache Tomcat/10.1.41]
+[INFO ][07:56:52.238][main] - Initializing Spring embedded WebApplicationContext
+[INFO ][07:56:52.238][main] - Root WebApplicationContext: initialization completed in 393 ms
+[INFO ][07:56:52.274][main] - dss.yaml (qwac.dss.dataloader.protocols) value: https, http, ftp
+[INFO ][07:56:52.274][main] - Using configured protocols from dss.yaml: [https, http, ftp]
+[INFO ][07:56:52.278][main] - Using ProtocolFilteringDataLoader with allowed protocols: [https, http, ftp]
+[INFO ][07:56:52.278][main] - CRL protocol filter enabled. Allowed protocols: [https, http, ftp]
+[INFO ][07:56:52.282][main] - QwacRunner: Testing CRL fetch using allowed protocols (HTTP, HTTPS) and disallowed (FTP)
+[INFO ][07:56:52.282][main] - QwacRunner: Calling http://example.com (allowed)
+[INFO ][07:56:53.342][main] - QwacRunner: Calling https://example.com (allowed)
+[INFO ][07:56:54.219][main] - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ][07:56:54.226][main] - Tomcat started on port 8080 (http) with context path '/'
+[INFO ][07:56:54.230][main] - Started TestApplication in 2.588 seconds (process running for 3.144)
+[INFO ][07:57:16.257][SpringApplicationShutdownHook] - Commencing graceful shutdown. Waiting for active requests to complete
+[INFO ][07:57:16.261][tomcat-shutdown] - Graceful shutdown complete
+[INFO ][07:57:18.527][main] - Starting TestApplication (using MyCustomDataLoader for CRL fetching)
+[INFO ][07:57:18.746][main] - Starting TestApplication using Java 17.0.15 with PID 2154 (/Users/admin/Desktop/Adorsys projects/Test/target/classes started by admin in /Users/admin/Desktop/Adorsys projects/Test)
+[INFO ][07:57:18.746][main] - No active profile set, falling back to 1 default profile: "default"
+[INFO ][07:57:19.115][main] - Tomcat initialized with port 8080 (http)
+[INFO ][07:57:19.120][main] - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ][07:57:19.120][main] - Starting service [Tomcat]
+[INFO ][07:57:19.120][main] - Starting Servlet engine: [Apache Tomcat/10.1.41]
+[INFO ][07:57:19.145][main] - Initializing Spring embedded WebApplicationContext
+[INFO ][07:57:19.145][main] - Root WebApplicationContext: initialization completed in 375 ms
+[INFO ][07:57:19.179][main] - dss.yaml (qwac.dss.dataloader.protocols) value: https, http, ftp
+[INFO ][07:57:19.179][main] - Using configured protocols from dss.yaml: [https, http, ftp]
+[INFO ][07:57:19.184][main] - Using ProtocolFilteringDataLoader with allowed protocols: [https, http, ftp]
+[INFO ][07:57:19.184][main] - CRL protocol filter enabled. Allowed protocols: [https, http, ftp]
+[INFO ][07:57:19.187][main] - QwacRunner: Calling http://example.com (allowed)
+[INFO ][07:57:20.230][main] - QwacRunner: Calling https://example.com (allowed)
+[INFO ][07:57:21.266][main] - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ][07:57:21.272][main] - Tomcat started on port 8080 (http) with context path '/'
+[INFO ][07:57:21.277][main] - Started TestApplication in 2.715 seconds (process running for 3.27)
+[INFO ][08:00:08.618][SpringApplicationShutdownHook] - Commencing graceful shutdown. Waiting for active requests to complete
+[INFO ][08:00:08.624][tomcat-shutdown] - Graceful shutdown complete

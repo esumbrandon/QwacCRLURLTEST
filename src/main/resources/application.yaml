@@ -1,0 +1,3 @@
+qwac:
+  dataloader:
+    protocols: HTTP, HTPPS

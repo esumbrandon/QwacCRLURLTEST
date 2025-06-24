@@ -1,0 +1,20 @@
+[INFO ][08:07:41.465][main] - Starting TestApplication (using MyCustomDataLoader for CRL fetching)
+[INFO ][08:07:41.724][main] - Starting TestApplication using Java 17.0.15 with PID 1016 (/Users/admin/Desktop/Main/Adorsys projects/Test/target/classes started by admin in /Users/admin/Desktop/Main/Adorsys projects/Test)
+[INFO ][08:07:41.725][main] - No active profile set, falling back to 1 default profile: "default"
+[INFO ][08:07:42.146][main] - Tomcat initialized with port 8080 (http)
+[INFO ][08:07:42.152][main] - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ][08:07:42.153][main] - Starting service [Tomcat]
+[INFO ][08:07:42.153][main] - Starting Servlet engine: [Apache Tomcat/10.1.41]
+[INFO ][08:07:42.180][main] - Initializing Spring embedded WebApplicationContext
+[INFO ][08:07:42.180][main] - Root WebApplicationContext: initialization completed in 433 ms
+[INFO ][08:07:42.215][main] - dss.yaml (qwac.dss.dataloader.protocols) value: https, http, ftp
+[INFO ][08:07:42.216][main] - Using configured protocols from dss.yaml: [https, http, ftp]
+[INFO ][08:07:42.223][main] - Using ProtocolFilteringDataLoader with allowed protocols: [https, http, ftp]
+[INFO ][08:07:42.223][main] - CRL protocol filter enabled. Allowed protocols: [https, http, ftp]
+[INFO ][08:07:42.227][main] - QwacRunner: Calling http://example.com (allowed)
+[INFO ][08:07:43.507][main] - QwacRunner: Calling https://example.com (allowed)
+[INFO ][08:07:44.516][main] - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ][08:07:44.523][main] - Tomcat started on port 8080 (http) with context path '/'
+[INFO ][08:07:44.527][main] - Started TestApplication in 3.012 seconds (process running for 3.823)
+[INFO ][08:08:49.237][SpringApplicationShutdownHook] - Commencing graceful shutdown. Waiting for active requests to complete
+[INFO ][08:08:49.241][tomcat-shutdown] - Graceful shutdown complete

@@ -1,0 +1,49 @@
+qwac:
+  dss:
+    version: ${dss.version}
+    lotl:
+      url: https://ec.europa.eu/tools/lotl/eu-lotl.xml
+      timeout:
+        connection: 15000
+        socket: 15000
+    jdbc:
+      ocsp:
+        cache:
+          source:
+            enabled: false
+    ocsp:
+      timeout:
+        connection: 15000
+        request: 15000
+        response: 15000
+    crl:
+      timeout:
+        connection: 15000
+        request: 15000
+        response: 15000
+    dataloader:
+      protocols: FILE,HTTP,HTTPS,FTP
+    oj:
+      url: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2019.276.01.0001.01.ENG
+      content:
+        keystore:
+          type: PKCS12
+          filename: keystore.p12
+          password: dss-password
+          shared: false
+          directory: qwac-assessor
+    datasource:
+      url: jdbc:hsqldb:mem:tldb
+      username: user
+      password: 12345
+      driver:
+        class: org.hsqldb.jdbcDriver
+    tl:
+      cron:
+        loader:
+          enabled: true
+        initial:
+          delay: 2000
+        delay: 3600000
+    rsa:
+      max_mr_tests: 3 
