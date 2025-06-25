@@ -1,0 +1,1 @@
+package com.example.test;import de.adorsys.psd2.qwac.lib.validator.certificate.CrlProtocol;import de.adorsys.psd2.qwac.lib.validator.certificate.ProtocolFilteringDataLoader;import java.util.List;public class MyCustomClass extends ProtocolFilteringDataLoader {    public MyCustomClass(List<CrlProtocol> allowedProtocols) {        super(allowedProtocols);    }}

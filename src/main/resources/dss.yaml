@@ -1,8 +1,0 @@
-qwac:
-  dss:
-      dataloader:
-        protocols: https, http, ftp
-      timeout:
-        connection: 5000
-        request: 5000
-        response: 5000

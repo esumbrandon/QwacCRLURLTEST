@@ -50,6 +50,11 @@
             <artifactId>qwac-assessor-lib-validator</artifactId>
             <version>4.9-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>de.adorsys.psd2.qwac</groupId>
+            <artifactId>qwac-assessor-lib-spring</artifactId>
+            <version>4.9-SNAPSHOT</version>
+        </dependency>
              <dependency>
             <groupId>de.adorsys.psd2.qwac</groupId>
             <artifactId>qwac-assessor-lib-common</artifactId>
